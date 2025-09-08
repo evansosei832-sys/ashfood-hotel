@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ashfood Court Hotel</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <div class="container">
+    <h1>Ashfood Court Hotel</h1>
+    <p class="tagline">Comfort • Convenience • Care — Welcome to Ashfood Court Hotel</p>
+    <a class="cta" href="#booking">Book a Room</a>
+  </div>
+</header>
+
+<main class="container">
+  <section id="about" class="card">
+    <h2>About Us</h2>
+    <p>Ashfood Court Hotel offers comfortable accommodation close to major hospitals and transport links. We focus on cleanliness, friendly service, and value-for-money stays.</p>
+  </section>
+
+  <section id="rooms" class="card">
+    <h2>Rooms & Rates (August 2025)</h2>
+    <p class="note">Prices updated for August 2025. Expected customers have raised concerns about the price increases; please contact us if you need a discounted or long-stay rate.</p>
+
+    <div class="rooms-grid">
+      <div class="room">
+        <h3>Room 21</h3>
+        <p class="price">¢300 / night</p>
+        <p>Comfortable single/double room.</p>
+      </div>
+
+      <div class="room">
+        <h3>Rooms 22–25, 28, 29</h3>
+        <p class="price">¢350 / night</p>
+        <p>Premium rooms with better views and amenities.</p>
+      </div>
+
+      <div class="room">
+        <h3>Rooms 26–27, 30–34, 37–52</h3>
+        <p class="price">¢200 / night</p>
+        <p>Standard rooms—clean and practical for short stays.</p>
+      </div>
+    </div>
+
+    <details class="more">
+      <summary>Why prices changed</summary>
+      <p>Rooms were adjusted upwardly to fund renovations, improve services, and cover rising utilities. We understand some guests were dissatisfied; please contact reception to discuss special rates for students, hospital caregivers, and long-stay guests.</p>
+    </details>
+  </section>
+
+  <section id="facilities" class="card">
+    <h2>Facilities & Services</h2>
+    <ul>
+      <li>24/7 Reception</li>
+      <li>Housekeeping</li>
+      <li>Free basic Wi-Fi (coming soon)</li>
+      <li>Restaurant / Breakfast options available on request</li>
+      <li>Secure parking</li>
+      <li>Daytime security personnel recommended</li>
+    </ul>
+  </section>
+
+  <section id="incidents" class="card">
+    <h2>Operational Notes — August 2025</h2>
+    <p>During the month, there were security incidents impacting staff safety. We strongly recommend hiring a full-time daytime security officer. Also, pending repairs include replacement of two polytanks at the main building.</p>
+  </section>
+
+  <section id="booking" class="card">
+    <h2>Booking Request</h2>
+    <p>Use the form below to send a booking request. This is a contact form for inquiries and reservation requests. (To enable email delivery, connect the form to Formspree or another form backend.)</p>
+
+    <!-- Formspree example: replace YOUR_FORMSPREE_ENDPOINT with your Formspree URL -->
+    <form id="bookingForm" action="https://formspree.io/f/your_form_id" method="POST">
+      <div class="form-row">
+        <label>Full Name<input name="name" required/></label>
+        <label>Email<input name="email" type="email" required/></label>
+      </div>
+      <div class="form-row">
+        <label>Phone<input name="phone" required/></label>
+        <label>Preferred Room / Notes<input name="room" /></label>
+      </div>
+      <div class="form-row">
+        <label>Check-in<input name="checkin" type="date" /></label>
+        <label>Check-out<input name="checkout" type="date" /></label>
+      </div>
+      <label class="full">Message<textarea name="message" rows="4"></textarea></label>
+      <div class="actions">
+        <button type="submit">Send Booking Request</button>
+        <button type="reset" class="alt">Reset</button>
+      </div>
+    </form>
+    <p class="small">If you prefer direct contact, call us at: <strong>+233 24 000 0000</strong></p>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact & Location</h2>
+    <p>Address: Ashfood Court Hotel — Main Street, Near the Hospital.</p>
+    <p>Phone: +233 24 000 0000 | Email: info@ashfoodhotel.com</p>
+    <div class="map-wrap">
+      <!-- Google Maps embed (replace src with your map if desired) -->
+      <iframe title="Ashfood Court Hotel location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126743.000!2d-0.2158208!3d5.6037179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9eb4b6c3d3d3%3A0x4c8b0f7a9c8b6a1e!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sgh!4v1590000000000" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Ashfood Court Hotel — All rights reserved.</p>
+    <p class="small">Site hosted on GitHub Pages. For a full dynamic booking system, connect this front-end to a backend API (we can build that separately).</p>
+  </footer>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+/* Simple responsive styles for Ashfood Court Hotel single-page site */
+:root{
+  --bg:#f6f7fb; --card:#fff; --accent:#2d6cdf; --muted:#666;
+  --maxw:980px;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#222; line-height:1.5;}
+.container{max-width:var(--maxw); margin:20px auto; padding:0 16px;}
+.hero{background-image:linear-gradient(135deg, rgba(45,108,223,0.12), rgba(45,108,223,0.06)); padding:48px 0; text-align:center; border-bottom:1px solid rgba(0,0,0,0.04);}
+.hero h1{margin:0;font-size:28px;letter-spacing:0.4px;}
+.hero .tagline{margin:8px 0 16px;color:var(--muted);}
+.cta{display:inline-block;background:var(--accent); color:#fff; padding:10px 18px; border-radius:8px; text-decoration:none;}
+.card{background:var(--card); padding:18px; border-radius:10px; box-shadow:0 6px 18px rgba(15,15,15,0.03); margin-bottom:18px;}
+h2{margin-top:0;color:var(--accent);}
+.rooms-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; margin-top:8px;}
+.room{border:1px dashed rgba(0,0,0,0.06); padding:12px; border-radius:8px; background:linear-gradient(0deg,#fff,#fbfcff);}
+.price{font-weight:700; color:var(--accent); margin:6px 0;}
+.more summary{cursor:pointer; color:var(--muted); margin-top:8px;}
+ul{margin:0 0 0 18px; padding:0;}
+.form-row{display:grid; grid-template-columns:1fr 1fr; gap:12px;}
+label{display:block; font-size:14px; margin-bottom:8px;}
+input,textarea{width:100%; padding:8px 10px; border:1px solid #e6e9ef; border-radius:8px; font-size:14px;}
+.actions{margin-top:12px; display:flex; gap:8px;}
+button{background:var(--accent); color:#fff; border:none; padding:10px 14px; border-radius:8px; cursor:pointer;}
+button.alt{background:transparent; color:var(--accent); border:1px solid rgba(45,108,223,0.12);}
+.small{font-size:13px;color:var(--muted);}
+.note{font-size:14px;color:#333;margin-bottom:10px;}
+
+/* map */
+.map-wrap{height:260px; overflow:hidden; border-radius:8px; border:1px solid rgba(0,0,0,0.04); margin-top:8px;}
+.map-wrap iframe{width:100%; height:100%; border:0;}
+
+/* footer */
+.footer{text-align:center; color:var(--muted); font-size:13px; padding:12px 0;}
+
+/* responsive */
+@media (max-width:720px){
+  .hero h1{font-size:22px;}
+  .form-row{grid-template-columns:1fr;}
+}
